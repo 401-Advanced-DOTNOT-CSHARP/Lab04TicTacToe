@@ -7,18 +7,48 @@ namespace Lab04TicTacToe
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello Bryant");
+            //Console.WriteLine("Hello World!");
+            //Console.WriteLine("Hello Bryant");
+
             StartGame();
         }
 
         static void StartGame()
         {
             // TODO: Setup your game. Create a new method that creates your players and instantiates the game class. Call that method in your Main method.
-            // You are requesting a Winner to be returned, Determine who the winner is output the celebratory message to the correct player. If it's a draw, tell them that there is no winner. 
+            // You are requesting a Winner to be returned, Determine who the winner is, output the celebratory message to the correct player. If it's a draw, tell them that there is no winner. 
+            Console.WriteLine("Please enter Player's 1 name: ");
+            string player1Name = Console.ReadLine();
+
+            Player playerOne = new Player()
+            {
+                Name = player1Name,
+                Marker = "X",
+                IsTurn = true
+            };
+
+            Console.WriteLine("Please enter Player's 2 name: ");
+            string player2Name = Console.ReadLine();
+
+            Player playerTwo = new Player()
+            {
+                Name = player2Name,
+                Marker = "O",
+                IsTurn = false
+            };
+
             Board thisGame = new Board();
 
             thisGame.DisplayBoard();
+
+            if(playerOne.IsTurn)
+                Console.WriteLine($"Choose your position: {playerOne.Name}");
+            else
+                Console.WriteLine($"Choose your position: {playerTwo.Name}");
+
+            Console.ReadLine();
+
+
         }
 
 
