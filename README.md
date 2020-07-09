@@ -4,9 +4,9 @@
 
 Lab04: Tic-Tac-Toe
 
-*Author: Yasir Mohamud*
-*Author: Bryant Davis*
-*Author: Trevor Stubbs*
+- *Author: Yasir Mohamud*
+- *Author: Bryant Davis*
+- *Author: Trevor Stubbs*
 
 ----
 
