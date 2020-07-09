@@ -24,16 +24,16 @@ namespace Lab04TicTacToe.Classes
 			Board = new Board();
 		}
 
-		/// <summary>
-		/// Activate the Play of the game
-		/// </summary>
-		/// <returns>Winner</returns>
-		public Player Play()
-		{
+        /// <summary>
+        /// Activate the Play of the game
+        /// </summary>
+        /// <returns>Winner</returns>
+        public Player Play()
+        {
 
-			//TODO: Complete this method and utilize the rest of the class structure to play the game.
+            //TODO: Complete this method and utilize the rest of the class structure to play the game.
 
-			/*
+            /*
              * Complete this method by constructing the logic for the actual playing of Tic Tac Toe. 
              * 
              * A few things to get you started:
@@ -46,17 +46,17 @@ namespace Lab04TicTacToe.Classes
                 and make sure that the game continues while there are unmarked spots on the board. 
 
             Use any and all pre-existing methods in this program to help construct the method logic. 
-             */			
-			
-		}
+             */
+
+        }
 
 
-		/// <summary>
-		/// Check if winner exists
-		/// </summary>
-		/// <param name="board">current state of the board</param>
-		/// <returns>if winner exists</returns>
-		public bool CheckForWinner(Board board)
+        /// <summary>
+        /// Check if winner exists
+        /// </summary>
+        /// <param name="board">current state of the board</param>
+        /// <returns>if winner exists</returns>
+        public bool CheckForWinner(Board board)
 		{
 			int[][] winners = new int[][]
 			{
