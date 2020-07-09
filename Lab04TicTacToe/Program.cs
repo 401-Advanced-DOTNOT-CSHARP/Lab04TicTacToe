@@ -38,12 +38,10 @@ namespace Lab04TicTacToe
             };
 
             Game game = new Game(playerOne, playerTwo);
+            game.Play();
 
 
 
-            Board thisGame = new Board();
-
-            thisGame.DisplayBoard();
 
             if(playerOne.IsTurn)
                 Console.WriteLine($"Choose your position: {playerOne.Name}");
