@@ -37,6 +37,10 @@ namespace Lab04TicTacToe
                 IsTurn = false
             };
 
+            Game game = new Game(playerOne, playerTwo);
+
+
+
             Board thisGame = new Board();
 
             thisGame.DisplayBoard();
