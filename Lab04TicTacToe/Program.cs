@@ -8,7 +8,7 @@ namespace Lab04TicTacToe
         /// <summary>
         /// This is what runs the program
         /// </summary>
-        /// <param name="args"></param>
+        /// <param name="args">string of args</param>
         static void Main(string[] args)
         {
             StartGame();
