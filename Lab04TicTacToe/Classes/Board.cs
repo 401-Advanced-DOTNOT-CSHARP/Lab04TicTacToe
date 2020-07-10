@@ -15,7 +15,9 @@ namespace Lab04TicTacToe.Classes
 			{"4", "5", "6"},
 			{"7", "8", "9"},
 		};
-
+		/// <summary>
+		/// Outputs the board to the console for the user
+		/// </summary>
 		public void DisplayBoard()
 		{            
             for (int i = 0; i < GameBoard.GetLength(0); i++)

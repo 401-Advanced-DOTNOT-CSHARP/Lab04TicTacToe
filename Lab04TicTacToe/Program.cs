@@ -5,6 +5,10 @@ namespace Lab04TicTacToe
 {
     public class Program
     {
+        /// <summary>
+        /// This is what runs the program
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             StartGame();
