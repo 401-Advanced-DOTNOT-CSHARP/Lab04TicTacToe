@@ -7,9 +7,6 @@ namespace Lab04TicTacToe
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
-            //Console.WriteLine("Hello Bryant");
-
             StartGame();
         }
 
@@ -39,17 +36,6 @@ namespace Lab04TicTacToe
 
             Game game = new Game(playerOne, playerTwo);
             game.Play();
-
-
-
-
-            if(playerOne.IsTurn)
-                Console.WriteLine($"Choose your position: {playerOne.Name}");
-            else
-                Console.WriteLine($"Choose your position: {playerTwo.Name}");
-
-            Console.ReadLine();
-
 
         }
 

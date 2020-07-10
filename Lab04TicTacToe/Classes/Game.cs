@@ -55,31 +55,21 @@ namespace Lab04TicTacToe.Classes
                 if (PlayerOne.IsTurn)
                 {
                     PlayerOne.TakeTurn(Board);
-
+                    SwitchPlayer();
                 }
                 else
                 {
                     PlayerTwo.TakeTurn(Board);
+                    SwitchPlayer();
                 }
 
-                SwitchPlayer();
+                CheckForWinner(Board);
 
             }
 
+            Board.DisplayBoard();
 
-
-            //if (PlayerOne.IsTurn)
-            //	Console.WriteLine($"Choose your position: {PlayerOne.Name}");
-            //else
-            //	Console.WriteLine($"Choose your position: {PlayerTwo.Name}");
-
-            //string playerSelected = Console.ReadLine();
-
-
-
-
-
-            return PlayerOne;
+            return Winner;
 
         }
 
@@ -118,6 +108,16 @@ namespace Lab04TicTacToe.Classes
 
                 // TODO:  Determine a winner has been reached. 
                 // return true if a winner has been reached. 
+                if (a + b + c == "XXX")
+                {
+                    Winner = PlayerOne;
+                    return true;
+                }
+                else if (a + b + c == "OOO")
+                {
+                    Winner = PlayerTwo;
+                    return true;
+                }
 
             }
 
