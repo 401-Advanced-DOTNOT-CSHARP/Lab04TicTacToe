@@ -34,11 +34,19 @@ namespace Lab04TicTacToe
                 IsTurn = false
             };
 
+            Console.Clear();
+
             Game game = new Game(playerOne, playerTwo);
-            game.Play();
+            Player winner = game.Play();
 
+            if (winner == null)
+            {
+                Console.WriteLine("It's a tie game.");
+            }
+            else
+            {
+                Console.WriteLine($"{winner.Name} is the winner!!");
+            }
         }
-
-
     }
 }
