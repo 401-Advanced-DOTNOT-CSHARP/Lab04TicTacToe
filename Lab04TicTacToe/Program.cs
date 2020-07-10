@@ -9,7 +9,9 @@ namespace Lab04TicTacToe
         {
             StartGame();
         }
-
+        /// <summary>
+        /// Asks users for name and beings the game and outputs to the console the name of the winner
+        /// </summary>
         static void StartGame()
         {
             // TODO: Setup your game. Create a new method that creates your players and instantiates the game class. Call that method in your Main method.
