@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab04TicTacToe.Classes
 {
-    class Game
+    public class Game
     {
         public Player PlayerOne { get; set; }
         public Player PlayerTwo { get; set; }
@@ -25,7 +25,7 @@ namespace Lab04TicTacToe.Classes
         }
 
         /// <summary>
-        /// Activate the Play of the game
+        /// Activate the Play of the game, switches players after every turn, verifies if their is a tie.
         /// </summary>
         /// <returns>Winner</returns>
         public Player Play()
